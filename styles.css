@@ -1,0 +1,111 @@
+/* Estilos para o corpo do documento */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 1rem 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Seções */
+  .section {
+    padding: 80px 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Seção Início */
+  .home-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+  }
+  
+  .home-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Cards do Portfolio */
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-item img {
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .portfolio-item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .portfolio-item-info {
+    opacity: 1;
+  }
+  
+  .portfolio-item-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .portfolio-item-info p {
+    font-size: 1.1rem;
+  }
+  
+  /* Formulário de Contato */
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
