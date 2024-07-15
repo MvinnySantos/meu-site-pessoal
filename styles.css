@@ -6,24 +6,36 @@ body {
     color: #333;
   }
   
-  /* Navbar */
   .navbar {
-    padding: 1rem 0;
+    padding: 0.5px 0; /* Espaçamento interno */
   }
   
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+  .navbar-toggler {
+    border: none; /* Remover borda padrão do botão */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white; /* Cor do ícone do menu */
   }
   
   .navbar-nav .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Tamanho da fonte */
     padding: 0.5rem 1rem;
+    transition: color 0.3s; /* Transição suave de cor */
   }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+  }
+  
+  .navbar-brand {
+    font-size: 1.0rem; /* Tamanho da fonte do brand */
+    font-weight: bold;
+  } 
   
   /* Seções */
   .section {
-    padding: 80px 0;
+    padding: 100px 0;
   }
   
   .section-title {
@@ -33,12 +45,12 @@ body {
   
   /* Seção Início */
   .home-section {
-    background-image: url('background.jpg');
+    background-image: url('./Fundo.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: rgb(248, 248, 250);
     text-align: center;
-    padding: 150px 0;
+    padding:300px 0;
   }
   
   .home-section h1 {
@@ -109,3 +121,47 @@ body {
     padding: 15px 0;
   }
   
+
+  /* Importação da fonte do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+/* Estilos para o SVG */
+svg {
+  font-family: "Russo One", sans-serif; /* Aplica a fonte ao SVG */
+  width: 100%;
+  height: 100%;
+}
+
+svg text {
+  animation: stroke 9s infinite alternate; /* Aplica a animação stroke ao texto */
+  stroke-width: 2; /* Largura do traço */
+  stroke: rgb(250, 249, 249); /* Cor do traço (alterado para branco) */
+  font-size: 55px; /* Tamanho da fonte do texto */
+}
+
+/* Animação stroke */
+@keyframes stroke {
+  0% {
+    fill: rgba(90, 78, 204, 0); /* Preenchimento transparente */
+    stroke: rgb(16, 49, 218); /* Cor do traço */
+    stroke-dashoffset: 25%; /* Deslocamento do traço */
+    stroke-dasharray: 0 50%; /* Tamanho do traço */
+    stroke-width: 2; /* Largura do traço */
+  }
+  70% {
+    fill: rgba(90, 78, 204, 0); /* Preenchimento transparente */
+    stroke: rgb(7, 23, 241); /* Cor do traço */
+  }
+  80% {
+    fill: rgba(90, 78, 204, 0); /* Preenchimento transparente */
+    stroke: rgb(244, 244, 248); /* Cor do traço */
+    stroke-width: 3; /* Largura do traço */
+  }
+  100% {
+    fill: rgb(241, 240, 245); /* Preenchimento com cor */
+    stroke: rgba(9, 24, 255, 0); /* Traço transparente */
+    stroke-dashoffset: -25%; /* Deslocamento invertido do traço */
+    stroke-dasharray: 50% 0; /* Tamanho do traço */
+    stroke-width: 0; /* Sem traço */
+  }
+}
