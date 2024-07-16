@@ -45,7 +45,7 @@ body {
   
   /* Seção Início */
   .home-section {
-    background-image: url('../Fundo.jpg');
+    background-image: url('./Fundo.jpg');
     background-size: cover;
     background-position: center;
     color: rgb(250, 250, 250);
