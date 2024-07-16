@@ -45,10 +45,10 @@ body {
   
   /* Seção Início */
   .home-section {
-    background-image: url('../Portfolio/10.jpg');
+    background-image: url('../Fundo.jpg');
     background-size: cover;
     background-position: center;
-    color: rgb(5, 5, 5);
+    color: rgb(250, 250, 250);
     text-align: center;
     padding:300px 0;
   }
