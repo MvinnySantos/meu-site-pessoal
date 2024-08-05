@@ -4,76 +4,90 @@ body {
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
-  }
+}
   
-  .navbar {
+.navbar {
     padding: 0.5px 0; /* Espaçamento interno */
-  }
+}
   
-  .navbar-toggler {
+.navbar-toggler {
     border: none; /* Remover borda padrão do botão */
-  }
+}
   
-  .navbar-toggler-icon {
+.navbar-toggler-icon {
     background-color: white; /* Cor do ícone do menu */
-  }
+}
   
-  .navbar-nav .nav-link {
+.navbar-nav .nav-link {
     font-size: 1.1rem; /* Tamanho da fonte */
     padding: 0.5rem 1rem;
     transition: color 0.3s; /* Transição suave de cor */
-  }
+}
   
-  .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
     color: #ffffff; /* Cor do texto ao passar o mouse */
-  }
+}
   
-  .navbar-brand {
+.navbar-brand {
     font-size: 1.0rem; /* Tamanho da fonte do brand */
     font-weight: bold;
-  } 
+} 
   
-  /* Seções */
-  .section {
+/* Seções */
+.section {
     padding: 100px 0;
-  }
+}
   
-  .section-title {
+.section-title {
     font-size: 2.5rem;
     margin-bottom: 40px;
-  }
-  
-  /* Seção Início */
-  .home-section {
-    /*background-image: url('../Portfolio/Fundo.jpg');*/
+}
+
+/* Seção Início */
+.home-section {
+    position: relative;
     background-size: cover;
     background-position: center;
     color: rgb(250, 250, 250);
     text-align: center;
-    padding:300px 0;
-  }
-  
-  .home-section h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Cards do Portfolio */
-  .portfolio-item {
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white;
+}
+
+/* Cards do Portfolio */
+.portfolio-item {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
-  }
-  
-  .portfolio-item img {
+}
+
+.portfolio-item img {
     transition: transform 0.3s ease;
-  }
-  
-  .portfolio-item:hover img {
+}
+
+.portfolio-item:hover img {
     transform: scale(1.1);
-  }
-  
-  .portfolio-item-info {
+}
+
+.portfolio-item-info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -83,41 +97,40 @@ body {
     padding: 15px;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  .portfolio-item:hover .portfolio-item-info {
+}
+
+.portfolio-item:hover .portfolio-item-info {
     opacity: 1;
-  }
-  
-  .portfolio-item-info h4 {
+}
+
+.portfolio-item-info h4 {
     font-size: 1.5rem;
     margin-bottom: 5px;
-  }
-  
-  .portfolio-item-info p {
+}
+
+.portfolio-item-info p {
     font-size: 1.1rem;
-  }
-  
-  /* Formulário de Contato */
-  .form-control {
+}
+
+/* Formulário de Contato */
+.form-control {
     margin-bottom: 15px;
-  }
-  
-  .btn-primary {
+}
+
+.btn-primary {
     background-color: #007bff;
     border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
+}
+
+.btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
-  }
-  
-  /* Rodapé */
-  footer {
+}
+
+/* Rodapé */
+footer {
     background-color: #343a40;
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
-  }
-  
+}
